@@ -12,7 +12,7 @@ public class SafeTask implements Runnable {
 
 	/**
 	 * ThreadLocal shared between the Thread objects
-	 * ThreadLocal 每个线程有自己的local变量
+	 * ThreadLocal 每个线程有自己的local变量，互相不干扰。
 	 */
 	private static ThreadLocal<Date> startDate= new ThreadLocal<Date>() {
 		protected Date initialValue(){

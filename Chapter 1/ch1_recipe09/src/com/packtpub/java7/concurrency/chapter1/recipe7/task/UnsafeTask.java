@@ -12,12 +12,15 @@ public class UnsafeTask implements Runnable{
 
 	/**
 	 * Date shared by all threads
+	 * 通常情况下，所有的线程共享数据
 	 */
 	private Date startDate;
 	
 	/**
 	 * Main method of the class. Saves the start date and writes
 	 * it to the console when it starts and when it ends
+	 * 
+	 * 开始时间不同，结束时间相同。前提是在有结束前，三个线程都先启动了。在线程结束前，共享的变量被别人改变了。通过单步调试要快才能看出来。
 	 */
 	@Override
 	public void run() {
