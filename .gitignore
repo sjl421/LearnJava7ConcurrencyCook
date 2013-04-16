@@ -1,5 +1,6 @@
 target/
 dist/
+bin/
 *.log
 *.tmproj
 lib_managed/
