@@ -1,0 +1,7 @@
+target/
+dist/
+*.log
+*.tmproj
+lib_managed/
+*.iml
+.idea/
