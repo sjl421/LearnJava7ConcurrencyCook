@@ -6,4 +6,5 @@ bin/
 lib_managed/
 *.iml
 .idea/
-.class
+
+*.class
